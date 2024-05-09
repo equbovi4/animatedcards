@@ -36,25 +36,26 @@ body {
     font-size: 25px;
     width: 40px;
     height: 40px;
+    transition: background-color 1s ease;
 }
 
 .card-description {
     padding: 0 10px 10px 10px;
     margin: 0px;
     background-color: white;
-    display: none;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease;
 }
 
 .show-description {
-    display: inline;
+    overflow: visible;
+    opacity: 1;
+    max-height: fit-content;
 }
 
 .focused {
     background-color: red;
+    transition: background-color 1s ease;
 }
-
-
-/* margin-top
-margin-right
-margin-bottom
-margin-left */
